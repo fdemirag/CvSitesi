@@ -1,19 +1,23 @@
-﻿ <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="~/hola-master/images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+﻿﻿
+@model List<CvSitesi.DataAccess.Entities.Feature> 
+
+<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="~/hola-master/images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
 
+
+        @foreach (var item in Model)
+    {
         <div class="home-content">
 
             <div class="row home-content__main">
 
-                <h3>Herkese Merhaba !</h3>
+                <h3>@item.Title</h3>
 
-              <h1>
-                Ben Fatih Demirağ. <br>
-                Full Stack Yazılım Geliştiriciyim <br>
-                designer based in Somewhere.
-              </h1>
+                <h1>
+                   @item.Description
+                </h1>
 
 
 
@@ -34,7 +38,9 @@
 
             </div>
 
-        </div> <!-- end home-content -->
+        </div>
+    }
+     <!-- end home-content -->
 
         <ul class="home-social">
             <li>

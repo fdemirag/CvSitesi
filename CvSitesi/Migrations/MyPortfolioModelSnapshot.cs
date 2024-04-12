@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CvSitesi.Migrations
 {
-    [DbContext(typeof(MyPortfolio))]
+    [DbContext(typeof(MyPortfolioContext))]
     partial class MyPortfolioModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

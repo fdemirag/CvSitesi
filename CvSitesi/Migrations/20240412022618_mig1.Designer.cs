@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CvSitesi.Migrations
 {
-    [DbContext(typeof(MyPortfolio))]
+    [DbContext(typeof(MyPortfolioContext))]
     [Migration("20240412022618_mig1")]
     partial class mig1
     {

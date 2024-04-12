@@ -16,41 +16,20 @@
 <body id="top">
 
     @await Component.InvokeAsync("_NavbarComponentPartial")
-   
-    <!-- home
-    ================================================== -->
-    @await Component.InvokeAsync("_FeatureComponentPartial")
-    <!-- about
-    ================================================== -->
-    @await Component.InvokeAsync("_AboutComponentPartial")
-     <!-- end about -->
-    <!-- 
 
-    ================================================== -->
+    @await Component.InvokeAsync("_FeatureComponentPartial")
+
+    @await Component.InvokeAsync("_AboutComponentPartial")
+
     @await Component.InvokeAsync("_PortfolioComponentPartial")
-     <!-- end works -->
-    <!-- testimonials
-    ================================================== -->
+
     @await Component.InvokeAsync("_TestimonialComponentPartial")
-     <!-- end s-testimonials -->
-    
-    <!-- s-cta
-    ================================================== -->
+
     @await Component.InvokeAsync("_StatisticComponentPartial")
-    <!-- s-stats
-    ================================================== -->
-     <!-- end s-stats -->
-    <!-- s-stats
-    ================================================== -->
+
     @await Component.InvokeAsync("_ContactComponentPartial")
 
-
-    
-    <!-- end s-contact -->
     @await Component.InvokeAsync("_FooterComponentPartial")
-    <!-- footer
-
-    ================================================== -->
    
 
 </body>

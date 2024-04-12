@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CvSitesi.DataAccess.Context
 {
-    public class MyPortfolio:DbContext
+    public class MyPortfolioContext:DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
