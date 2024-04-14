@@ -16,7 +16,7 @@
                 <h3>@item.Title</h3>
 
                 <h1>
-                   @item.Description
+                    @Html.Raw(item.Description.Replace("<br>", "<br>"))
                 </h1>
 
 
